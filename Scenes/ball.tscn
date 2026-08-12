@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bkgsgplmdrdk4"]
+
+[ext_resource type="Texture2D" uid="uid://f0utvxt0fri5" path="res://icon.svg" id="1_d60mj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f68go"]
+radius = 40.792156
+
+[node name="Ball" type="RigidBody2D" unique_id=622205405]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=775615880]
+modulate = Color(0.72156864, 0.2, 0.8, 1)
+scale = Vector2(0.5234375, 0.5625)
+texture = ExtResource("1_d60mj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=685236461]
+shape = SubResource("CircleShape2D_f68go")
